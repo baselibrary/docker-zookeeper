@@ -27,7 +27,7 @@ EXPOSE 2181 2888 3888
 
 VOLUME ["/var/lib/zookeeper"]
 
-ENTRYPOINT ["tini", "--", "/docker-entrypoint.sh"]
+ENTRYPOINT ["/docker-entrypoint.sh"]
 
 CMD ["zkServer.sh", "start-foreground"]
 

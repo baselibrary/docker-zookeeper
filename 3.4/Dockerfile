@@ -3,7 +3,7 @@ MAINTAINER ShawnMa <qsma@thoughtworks.com>
 
 ## Version
 ENV ZOOKEEPER_MAJOR   3.4
-ENV ZOOKEEPER_VERSION 3.4.5+cdh5.4.8+96-1.cdh5.4.8.p0.5~trusty-cdh5.4.8
+ENV ZOOKEEPER_VERSION 3.4.5+cdh5.5.1+91-1.cdh5.5.1.p0.15~trusty-cdh5.5.1
 
 ## Repository
 RUN \
@@ -27,7 +27,7 @@ EXPOSE 2181 2888 3888
 
 VOLUME ["/var/lib/zookeeper"]
 
-ENTRYPOINT ["tini", "--", "/docker-entrypoint.sh"]
+ENTRYPOINT ["/docker-entrypoint.sh"]
 
 CMD ["zkServer.sh", "start-foreground"]
 
