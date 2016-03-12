@@ -3,7 +3,7 @@ MAINTAINER ShawnMa <qsma@thoughtworks.com>
 
 ## Version
 ENV ZOOKEEPER_MAJOR   3.4
-ENV ZOOKEEPER_VERSION 3.4.5+cdh5.5.1+91-1.cdh5.5.1.p0.15~trusty-cdh5.5.1
+ENV ZOOKEEPER_VERSION 3.4.5+cdh5.6.0+91-1.cdh5.6.0.p0.99~trusty-cdh5.6.0
 
 ## Repository
 RUN \
